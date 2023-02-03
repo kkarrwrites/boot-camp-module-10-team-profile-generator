@@ -1,2 +1,1 @@
-# boot-camp-module-10-team-profile-generator
- 
+# Boot Camp - Object-Oriented Programming Challenge: Team Profile Generator
