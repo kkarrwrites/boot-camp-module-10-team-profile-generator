@@ -1,0 +1,47 @@
+:root {
+  --black: hsl(0, 0%, 0%);
+  --prmary-header: hsl(354, 78%, 59%);
+  --secondary-header: hsl(211, 100%, 48%);
+  --tertiary-header: hsl(220, 20%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: var(--prmary-header);
+  color: var(--white);
+  padding: 50px 0 50px 0;
+  text-align: center;
+}
+
+section {
+  background: var(--white);
+  height: 100vh;
+}
+
+section > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  border: solid black;
+  height: 100px;
+}
