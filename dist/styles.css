@@ -1,9 +1,10 @@
 :root {
   --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --shadow: hsl(0, 0%, 53%);
   --prmary-header: hsl(354, 78%, 59%);
   --secondary-header: hsl(211, 100%, 48%);
-  --tertiary-header: hsl(220, 20%, 97%);
-  --white: hsl(0, 0%, 100%);
+  --tertiary-header: hsl(220, 6%, 90%);
 }
 
 html {
@@ -35,13 +36,58 @@ section {
   height: 100vh;
 }
 
-section > div {
+.cards-container /* section > div */ {
+  padding: 5% 10% 5% 10%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-article {
-  border: solid black;
-  height: 100px;
+.card /* article */ {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 4px 4px 6px 2px var(--shadow);
+  margin: 0 0 20px 0;
+  flex: 0 1 calc(100% - 1em);
+}
+
+.card-header {
+  background-color: var(--secondary-header);
+  border-radius: 5px 5px 0 0;
+  color: var(--white);
+  padding: 20px;
+}
+
+.card-header > h2 {
+  padding: 0 0 10px 10px;
+}
+
+.card-header h3 {
+  padding: 0 0 0 10px;
+}
+
+.card-body {
+  background-color: var(--tertiary-header);
+  border-radius: 0 0 5px 5px;
+  color: var(--black);
+  padding: 30px 20px;
+}
+
+.card-body > p {
+  background-color: var(--white);
+  border: solid 1px var(--tertiary-header);
+  color: var(--black);
+  padding: 10px;
+}
+
+@media screen and (min-width: 49.375em /* 790px */) {
+  .card {
+    flex: 0 1 calc(50% - 1em);
+  }
+}
+
+@media screen and (min-width: 75em /* 1200px */) {
+  .card {
+    flex: 0 1 calc(33% - 1em);
+  }
 }
