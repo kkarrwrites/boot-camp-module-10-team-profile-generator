@@ -1,22 +1,22 @@
 module.exports = [
   {
     type: "input",
-    name: "managerName",
+    name: "name",
     message: "What is the team manager's name?",
   },
   {
     type: "input",
-    name: "managerId",
+    name: "id",
     message: "What is the team manager's employee ID?",
   },
   {
     type: "input",
-    name: "managerEmail",
+    name: "email",
     message: "What is the team manager's email address?",
   },
   {
     type: "input",
-    name: "managerOfficeNumber",
+    name: "officeNumber",
     message: "What is the team manager's office number?",
   },
 ];
