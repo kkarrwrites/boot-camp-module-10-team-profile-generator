@@ -6,7 +6,7 @@ function generateIntern(intern) {
     </div>
     <div class="card-body">
       <p>ID: ${intern.id}</p>
-      <p>Email: ${intern.email}</p>
+      <p>Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
       <p>School: ${intern.school}</p>
     </div>
   </article>`;
