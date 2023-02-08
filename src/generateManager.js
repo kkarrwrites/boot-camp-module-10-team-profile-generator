@@ -6,7 +6,7 @@ function generateManager(manager) {
       </div>
       <div class="card-body">
         <p>ID: ${manager.id}</p>
-        <p>Email: ${manager.email}</p>
+        <p>Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
         <p>Office Number: ${manager.officeNumber}</p>
       </div>
     </article>`;
