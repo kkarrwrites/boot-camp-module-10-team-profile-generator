@@ -6,8 +6,9 @@ function generateEngineer(engineer) {
       </div>
       <div class="card-body">
         <p>ID: ${engineer.id}</p>
-        <p>Email: ${engineer.email}</p>
+        <p>Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
         <p>GitHub: ${engineer.github}</p>
+        <p>GitHub: <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</p>
       </div>
     </article>`;
 }
