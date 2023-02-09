@@ -8,7 +8,7 @@ An OOP JavaScript, Node.js, and npm coding challenge for UConn Boot Camp.
 
 ## Walkthrough
 
-[Video Walkthrough]()
+[Video Walkthrough](https://watch.screencastify.com/v/8N58iAYUFlpdqzCy83cB)
 
 ## Screenshot
 
