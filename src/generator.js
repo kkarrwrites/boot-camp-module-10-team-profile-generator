@@ -72,27 +72,21 @@ class Generator {
   }
 
   generateHTML() {
-    console.log(team);
     const cards = [];
     for (let i = 0; i < team.length; i++) {
       const employee = team[i];
       const role = employee.getRole();
-      console.log(role);
       if (role === "Manager") {
         const managerCard = generateManager(employee);
-        console.log(managerCard);
         cards.push(managerCard);
       } else if (role === "Engineer") {
         const engineerCard = generateEngineer(employee);
-        console.log(engineerCard);
         cards.push(engineerCard);
       } else if (role === "Intern") {
         const internCard = generateIntern(employee);
-        console.log(internCard);
         cards.push(internCard);
       }
     }
-    console.log(cards);
     const cardsHTML = cards.join("");
     const completeHTML = `<!DOCTYPE html>
 <html lang="en">
@@ -115,7 +109,7 @@ class Generator {
   </body>
 </html>`;
     fs.appendFile("./dist/index.html", completeHTML, (error) =>
-      error ? console.error(error) : console.log("index.html created.")
+      error ? console.error(error) : console.log("Created index.html.")
     );
   }
 }
