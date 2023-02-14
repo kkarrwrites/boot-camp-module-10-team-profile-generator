@@ -2,7 +2,7 @@
 
 ## About
 
-An OOP JavaScript, Node.js, and npm coding challenge for UConn Boot Camp.
+An OOP JavaScript, Node.js, and npm coding challenge for Full Stack Coding Boot Camp.
 
 ## Description
 
