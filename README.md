@@ -10,7 +10,7 @@ This is a command line interface (CLI) application written in JavaScript (with a
 
 ## Walkthrough
 
-[Video Walkthrough](https://drive.google.com/file/d/1LT9aZgZH4Wkw5RvUY26sBCE0aPXjHQOK/view)
+[Video Walkthrough](https://drive.google.com/file/d/1jqu6Lc4IhW8gk1nYpmtRJQ7Yu4vobHzS/view)
 
 ## Screenshot
 
